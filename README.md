@@ -1,7 +1,7 @@
 
 # Fluid Slider sample project in Kotlin 
 
-This is a sample project on how to implement on Fluid Slider in the kotlin.
+This is a sample project on how to implement on Fluid Slider in kotlin.
 
 
 ## Screenshots
