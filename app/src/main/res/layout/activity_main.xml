@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvAddCalories"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    style="@style/TextAppearance.MaterialComponents.Headline5"
+                    android:text="@string/add_calories"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <com.ramotion.fluidslider.FluidSlider
+                    android:id="@+id/fsCaloriesIntake"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvAddCalories"
+                    app:bar_color="#3F51B5"
+                    app:duration="500"
+                    app:end_text="max"
+                    app:size="normal"
+                    app:start_text="0" />
+
+                <Button
+                    android:id="@+id/btnAddCalories"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fsCaloriesIntake"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="48dp"
+                    android:layout_marginBottom="14dp"
+                    android:textAllCaps="true"
+                    android:hint="@string/add_daily_intake_message"
+                    android:textColorHint="@color/purple_500"
+                    android:text="@string/add_calories"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

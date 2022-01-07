@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Fluid Slider Sample</string>
+    <string name="add_calories">Add Calories</string>
+    <string name="add_daily_intake_message">Add calories from your daily intake</string>
+</resources>
